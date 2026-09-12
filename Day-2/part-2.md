@@ -829,8 +829,8 @@ matrix = [inner, [3, 4]]
 shallow = matrix.copy()
 shallow[0].append(999)      # modifies the SHARED inner list
 
-print(matrix)               # [1, 2, 999]...  wait:
 print(matrix)               # [[1, 2, 999], [3, 4]]  -> changed!
+print(shallow)              # also [[1, 2, 999], [3, 4]]
 ```
 
 **Output:**
@@ -1995,8 +1995,8 @@ print(9_500_000 in big)   # True — scans millions
 ```
 
 > For heavy membership testing, use a `set` instead of a list.
-> Actually, in Python, flat list insertion/removal at the START (`insert(0, ...)`,
-> `pop(0)`) is O(n) because every element shifts. Append/pop at the END is O(1) (amortized).
+> Note: insertion/removal at the START of a list (`insert(0, ...)`, `pop(0)`) is O(n)
+> because every element shifts. Append/pop at the END is O(1) (amortized).
 
 ## 17.3 `append()` at the end is fast (amortized O(1))
 

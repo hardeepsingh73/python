@@ -29,7 +29,7 @@ Python is a high-level, interpreted, general-purpose programming language. It wa
 |---|---|
 | **Creator** | Guido van Rossum |
 | **First Released** | February 20, 1991 |
-| **Latest Stable Version** | Python 3.13 (as of 2025) |
+| **Latest Stable Version** | Python 3.14 (released October 2025) |
 | **License** | Open Source (PSF License) |
 | **Website** | https://www.python.org |
 
@@ -87,7 +87,7 @@ Python has two major version lines:
 - **Python 2** (legacy, officially end-of-life since January 1, 2020)
 - **Python 3** (current and recommended)
 
-Always use **Python 3** for new projects. The currently recommended version is **Python 3.12 or later**.
+Always use **Python 3** for new projects. The currently recommended stable version is **Python 3.13 or 3.14** (Python 3.12 also works with the examples in this guide).
 
 ### Hello, World! Program
 
@@ -754,7 +754,7 @@ for = 10  # SyntaxError: invalid syntax
 
 ### Python Keywords (Python 3.12+)
 
-Python 3.12 has **35 keywords**:
+From Python 3.12 onward there are **35 keywords**:
 
 | Keyword | Description |
 |---|---|
@@ -1585,7 +1585,7 @@ isinstance(x, int) # Checks if x is an int
 
 **13.** Write a single-line comment and a multi-line docstring for a function that adds two numbers.
 
-**14.** How many keywords does Python 3.12 have? Name any five.
+**14.** How many keywords does Python 3.12+ have? Name any five.
 
 ### Section 4: Operators
 

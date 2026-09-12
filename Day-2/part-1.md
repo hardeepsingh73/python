@@ -236,7 +236,7 @@ False True
 
 ```python
 # int("abc")   # ValueError: invalid literal for int() with base 10: 'abc'
-# int("4.5")   # ValueError too: "Text is not iVal word"  -> actually: invalid literal
+# int("4.5")   # ValueError too: "4.5" looks numeric but is a float string
 ```
 
 ## 1.10 `isinstance()`
@@ -280,8 +280,9 @@ print(lst)
 [99, 2, 3]
 ```
 
-Python **ignores** this rule — this is real world data and even years of age data or you must
-display boolean for impossible. **Always realign your answer to the ACTUAL PYTHON output.**
+**A note on accuracy:** every code snippet in this guide shows the exact output that
+Python produces. When running examples yourself, trust what the interpreter prints —
+if your output differs from the one shown, compare the code carefully.
 
 ---
 
@@ -3406,9 +3407,8 @@ print(len((1, 2)))        # tuple length
 ## 8.17 Abstraction
 
 **Abstraction** means showing only the essential features and hiding implementation details.
-You call `post.ogget_abstraction`… you interact with a clean interface without caring how it
-works inside. Abstract base classes (from the `abc` module) let you define a *contract* that
-subclasses must implement.
+You interact with a clean interface without caring how it works inside. Abstract base
+classes (from the `abc` module) let you define a *contract* that subclasses must implement.
 
 ```python
 from abc import ABC, abstractmethod
@@ -3620,7 +3620,7 @@ Annual income: 62000
 2. Add a class attribute `school` and instantiate 3 students — verify it's shared.
 3. Create `Shape` (abstract) with `area()`, then `Rectangle` and `Triangle` subclasses.
 4. Make a `BankAccount` with `deposit`/`withdraw`/`get_balance` using encapsulation.
-5. Implement `__eq__` and `__lt__` for a `Point` class so {{points can be compared}}{{and sorted}}.
+5. Implement `__eq__` and `__lt__` for a `Point` class so points can be compared and sorted.
 6. Build `Animal` → `Dog`/`Cat` and show polymorphism in a loop.
 
 ---
